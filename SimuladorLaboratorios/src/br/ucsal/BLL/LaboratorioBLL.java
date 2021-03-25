@@ -75,6 +75,19 @@ public class LaboratorioBLL {
 		
 	}
 	
+	private void ContaDoDia() {
+		//List<Laboratorio> listaDeLaboratorios = Listar();
+		//objetoparaDia = new ObjetoParaDia(); 
+		// o que tem nesse objeto? NOME DO COMPUTADOR e SUAS VOLTAGEM DIARIA E O DIA
+		foreach(Laboratorio lab : listaDeLaboratorios){
+			foreach(Computador comp : lab.getComputadores()){
+				voltagemDiaGabinete = comp.getVoltagemGabinete() * qtdHrLigada;
+				voltagemMonitor = comp.getVoltagemMonitor() * qtdHrLigada;
+				voltagemTotal = voltagemGabinete + voltagemMonitor;
+			}
+		}
+		
+	}
 	
 	
 }
