@@ -7,8 +7,7 @@ public class Laboratorio {
 	private int id;
 	private String nome;
 	private List<Acessorio> acessorios;
-	// Como fazer para realizar as movimentações?
-	
+	private List<Computador> computadores;
 	
 	public int getId() {
 		return id;
@@ -28,8 +27,12 @@ public class Laboratorio {
 	public void setAcessorios(List<Acessorio> acessorios) {
 		this.acessorios = acessorios;
 	}
-	
-	
+	public List<Computador> getComputadores() {
+		return computadores;
+	}
+	public void setComputadores(List<Computador> computadores) {
+		this.computadores = computadores;
+	}
 	
 	
 }
